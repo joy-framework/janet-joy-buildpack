@@ -37,7 +37,7 @@ curl -LJs $JANET_URL | tar xz
 mv $JANET_ARCHIVE_NAME $JANET_DIR_NAME
 
 mkdir -p "$JANET_PATH"
-cd $BUILD_DIR && jpm --verbose load-lockfile && cd -
+# cd $BUILD_DIR && jpm deps --verbose && cd -
 
 echo "Copying Janet files"
 cp -r $JANET_PATH $BUILD_DIR/.janet
